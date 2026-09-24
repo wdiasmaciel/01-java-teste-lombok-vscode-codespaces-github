@@ -70,31 +70,51 @@ public class Main {
 }
 ```
 
-# Compilar
-* Compilar as classes usando o comando abaixo:
+# Em Java 25:
+
+1. Compilar as classes usando o comando abaixo:
+
+```bash
+javac -cp lombok.jar -processorpath lombok.jar Usuario.java Main.java
 ```
+
+2. Executar o programa usando o comando abaixo:
+
+```bash
+java -cp . Main
+```
+
+# Em versões anterios da linguagem Java:
+
+1. Compilar as classes usando o comando abaixo:
+
+```bash
 javac -cp lombok.jar -p lombok.jar Usuario.java Main.java 
 ```
+
 __OBS__:
 * `-cp`: (__classpath__) usado para classes e bibliotecas no modelo tradicional (não modular).
 * `-p`: (__module-path__) usado para arquivos `JAR` configurados como módulos no novo sistema modular (__Project Jigsaw__).
 
-# Executar
-* Executar o programa usando o comando abaixo:
-```
+
+2. Executar o programa usando o comando abaixo:
+
+```bash
 java Main
 ```
 
 # Git & GitHub
+
 Enviar o código para o `GitHub` usando o `Git`:
-```
+
+```bash
 git add .
 ```
 
-```
+```bash
 git commit -m "Exemplo de programa Java com a biblioteca Lombok."
 ```
 
-```
+```bash
 git push
 ```
