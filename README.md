@@ -84,7 +84,7 @@ javac -cp lombok.jar -processorpath lombok.jar Usuario.java Main.java
 java -cp . Main
 ```
 
-# Em versões anterios da linguagem Java:
+# Em versões anteriores da linguagem Java:
 
 1. Compilar as classes usando o comando abaixo:
 
